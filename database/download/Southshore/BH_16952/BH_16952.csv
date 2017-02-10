@@ -1,0 +1,53 @@
+GROUP,LOCA
+HEADING,LOCA_ID,LOCA_LAT,LOCA_LON,LOCA_TYPE,LOCA_GL,LOCA_FDEP,LOCA_STAR,LOCA_ENDD,LOCA_REM
+UNIT,,deg,deg,,m,m,yyyy-mm-dd,yyyy-mm-dd,
+TYPE,ID,5DP,5DP,PA,2DP,2DP,DT,DT,X
+DATA,BH_16952,-43.54985146,172.7474683,HDPH,1.61,10.95,2012-12-14,2012-12-14,
+" "
+GROUP,HDPH
+HEADING,LOCA_ID,HDPH_TYPE,HDPH_WAT,HDPH_CREW,HDPH_REM
+UNIT,,,m,,
+TYPE,ID,X,2DP,X,X
+DATA,BH_16952,Roto-Sonic,1.61,"Tonkin & Taylor Ltd",
+" "
+" "
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_16952,0,0.5,GW,,"Sandy fine to coarse GRAVEL with minor silt, brownish grey, angular to subangular, moist, well graded. Sand is fine to coarse."
+DATA,BH_16952,0.5,1.2,SP,,"Fine to medium SAND with some silt, brownish grey, moist, poorly graded."
+DATA,BH_16952,1.2,3.8,,,"1.2m- minor silt."
+DATA,BH_16952,3.8,4,,,"3.8 to 4.0m- trace fine to medium gravel, subrounded."
+DATA,BH_16952,4,9,,,
+DATA,BH_16952,9,10,,,"9.0m- some silt."
+DATA,BH_16952,10,10.95,SP,,"Fine to medium SAND with minor silt and trace broken shells, brownish grey, medium dense, wet, poorly graded."
+DATA,BH_16952,,,,,
+" "
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_16952,1.15,"1.15m- grey."
+DATA,BH_16952,1.5,"1.5m- medium dense, wet."
+DATA,BH_16952,3,"3.0m- trace silt, loose."
+DATA,BH_16952,3.45,"3.45m- trace broken shells."
+DATA,BH_16952,6,"6.0m- 0.2m heave observed prior to SPT."
+DATA,BH_16952,6.01,"6.0m- no SPT."
+DATA,BH_16952,7.5,"7.5m- medium dense."
+DATA,BH_16952,8.7,"8.7m- minor silt."
+DATA,BH_16952,10.95,"End of borehole at 10.95mbgl (target depth)"
+DATA,BH_16952,,
+" "
+GROUP,ISPT
+HEADING,LOCA_ID,ISPT_TOP,ISPT_TPEN,ISPT_NVAL,ISPT_ERAT,ISPT_MECH,ISPT_METH,ISPT_REM
+UNIT,,m,cm,,%,,,
+TYPE,ID,2DP,1DP,0DP,0DP,X,X,X
+DATA,BH_16952,1.5,45,16,-,,,
+DATA,BH_16952,3,45,9,-,,,
+DATA,BH_16952,4.5,45,8,-,,,
+DATA,BH_16952,7.5,45,19,-,,,
+DATA,BH_16952,9,45,14,-,,,
+DATA,BH_16952,10.5,45,20,-,,,
+DATA,BH_16952,,,,,,,
+" "

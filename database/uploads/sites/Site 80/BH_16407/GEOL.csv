@@ -1,0 +1,14 @@
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_16407,0,0.05,,,ASPHALT.
+DATA,BH_16407,0.05,0.4,GW,,"Sandy fine to coarse GRAVEL with some silt and trace organics, brownish grey, moist, well graded. Sand is fine to coarse."
+DATA,BH_16407,0.4,0.8,SM,,"Silty fine to medium SAND, greenish grey, moist, poorly graded."
+DATA,BH_16407,0.8,4.5,GW,,"Sandy fine to coarse GRAVEL with minor silt, greenish grey, subangular to subrounded, wet, well graded. Sand is fine to coarse."
+DATA,BH_16407,4.5,5.5,SP,,"Fine to medium SAND with minor silt, greenish grey,  loose, wet, poorly graded."
+DATA,BH_16407,5.5,8.1,MH,,"SILT with some sand and some organics, grey, firm, wet, high plasticity. Sand is fine to medium. Organics are fibrous."
+DATA,BH_16407,8.1,12.4,ML,,"Sandy SILT, grey, very soft, wet, low plasticity. Sand is fine to medium."
+DATA,BH_16407,12.4,13.3,GW,,"Sandy fine to coarse GRAVEL, grey, subangular to subrounded, wet, medium dense, well graded. Sand is fine to coarse."
+DATA,BH_16407,13.3,14,SP,,"Fine to medium SAND with trace silt, yellowish brown, medium dense, wet, poorly graded."
+DATA,BH_16407,14,19.95,GW,,"Sandy fine to coarse GRAVEL with minor silt, yellowish brown, subangular to subrounded, dense, wet, well graded. Sand is fine to coarse."

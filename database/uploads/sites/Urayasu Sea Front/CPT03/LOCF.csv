@@ -1,0 +1,6 @@
+GROUP,LOCF
+HEADING,LOCA_ID,LOCF_NAME,LOCF_DESC,FILE_NAME
+UNIT,,,,
+TYPE,ID,X,X,X
+DATA,CPT03,"CPT Profile (png)","CPT profile, png format",CHB-URY-CPT03.png
+DATA,CPT03,"CPT Profile (csv)","CPT profile, csv format",CHB-URY-CPT03.csv

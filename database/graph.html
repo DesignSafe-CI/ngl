@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Profile</title>
+    <!--Plotly-->
+    <script src="src/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div id='graph' style='width:600px;float:left;'></div>
+    <script>        
+     
+    function CSVToArray( strData, strDelimiter ){
+    // Check to see if the delimiter is defined. If not,
+    // then default to comma.
+    strDelimiter = (strDelimiter || ",");
+
+    // Create a regular expression to parse the CSV values.
+    var objPattern = new RegExp(
+        (
+            // Delimiters.
+            "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
+
+            // Quoted fields.
+            "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+
+            // Standard fields.
+            "([^\"\\" + strDelimiter + "\\r\\n]*))"
+        ),
+        "gi"
+        );
+
+
+    // Create an array to hold our data. Give the array
+    // a default empty first row.
+    var arrData = [[]];
+
+    // Create an array to hold our individual pattern
+    // matching groups.
+    var arrMatches = null;
+
+
+    // Keep looping over the regular expression matches
+    // until we can no longer find a match.
+    while (arrMatches = objPattern.exec( strData )){
+
+        // Get the delimiter that was found.
+        var strMatchedDelimiter = arrMatches[ 1 ];
+
+        // Check to see if the given delimiter has a length
+        // (is not the start of string) and if it matches
+        // field delimiter. If id does not, then we know
+        // that this delimiter is a row delimiter.
+        if (
+            strMatchedDelimiter.length &&
+            strMatchedDelimiter !== strDelimiter
+            ){
+
+            // Since we have reached a new row of data,
+            // add an empty row to our data array.
+            arrData.push( [] );
+
+        }
+
+        var strMatchedValue;
+
+        // Now that we have our delimiter out of the way,
+        // let's check to see which kind of value we
+        // captured (quoted or unquoted).
+        if (arrMatches[ 2 ]){
+
+            // We found a quoted value. When we capture
+            // this value, unescape any double quotes.
+            strMatchedValue = arrMatches[ 2 ].replace(
+                new RegExp( "\"\"", "g" ),
+                "\""
+                );
+
+        } else {
+
+            // We found a non-quoted value.
+            strMatchedValue = arrMatches[ 3 ];
+
+        }
+
+
+        // Now that we have our value string, let's add
+        // it to the data array.
+        arrData[ arrData.length - 1 ].push( strMatchedValue );
+    }
+
+    // Return the parsed data.
+    return( arrData );
+}
+        
+    cptplotlayout = function(title){
+        cptplotlayout = {
+            title: title,
+            xaxis: {
+                title: "<b>q<sub>c</sub> (kPa)</b>",
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                side: "bottom",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                domain: [0,0.33]
+            },
+            xaxis2: {
+                title: "<b>f<sub>s</sub> (kPa)</b>",
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                side: "bottom",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                domain: [0.33,0.66]
+            },
+            xaxis3: {
+                title: "<b>u<sub>2</sub> (kPa)</b>",
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                side: "bottom",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                domain: [0.66,1]
+            },
+            yaxis: {
+                title: "<b>Depth (m)</b>",
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                position: "left",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                anchor: 'x',
+                autorange:'reversed'
+            },
+            yaxis2: {
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                position: "left",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                anchor: 'x2',
+                showticklabels: false,
+                autorange:'reversed'
+            },
+            yaxis3: {
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                position: "left",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                anchor: 'x3',
+                showticklabels: false,
+                autorange:'reversed'
+            },
+            margin: {
+                pad: 0,
+                t: 100,
+                b: 50,
+                r: 20
+            },
+            showlegend: false
+            };
+        return(cptplotlayout);
+    }
+      
+    sptplotlayout = function(title){
+        sptplotlayout = {
+            title: title,
+            xaxis: {
+                title: "<b>N</b>",
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                side: "bottom",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                domain: [0,0.33]
+            },
+            xaxis2: {
+                title: "<b>Layer</b>",
+                side: "bottom",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                domain: [0.33,1]
+            },
+            yaxis: {
+                title: "<b>Depth (m)</b>",
+                showgrid: true,
+                gridwidth: 1,
+                gridcolor: 'rgb(200,200,200)',
+                position: "left",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                anchor: 'x',
+                autorange:'reversed'
+            },
+            yaxis2: {
+                position: "left",
+                showline: true,
+                linewidth: 2,
+                linecolor: "black",
+                mirror: true,
+                anchor: 'x2',
+                showticklabels: false,
+                autorange:'reversed'
+            },
+            margin: {
+                    pad: 0,
+                    t: 100,
+                    b: 50,
+                    r: 20
+            },
+            showlegend: false
+        };
+        return(sptplotlayout);
+    }
+    // Graph in a new window
+    var graph = document.getElementById('graph');
+        
+    // Parse CSV
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", link, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+            }
+        }
+    }
+    rawFile.send(null);    
+    var data = CSVToArray(rawFile.responseText);
+    
+    // Data slice
+    var loca = 'off';
+    var scpg = 'off';
+    var scpt = 'off';
+    var geol = 'off';
+    var detl = 'off';
+    var ispt = 'off';
+
+    var types = ['LOCA','SCPG','SCPT','HDPH','GEOL','DETL','ISPT'];
+    var idx1 = new Array();
+    var idx2 = new Array();    
+    var tmp = 'off';
+        
+    for(j=0;j<data.length;j++){
+        // idx for type selected
+        for(k=0;k<types.length;k++){
+            if(data[j][1] == types[k]){
+                idx1[k] = j;
+                tmp = 'on';
+            }
+            if(tmp = 'on' & data[j][0] == ''){
+                idx2[k] = j-1;
+                tmp = 'off';
+            }                
+        }
+        // 11/08/2016
+        
+        // LOCA idx for type selected
+        if(data[j][1] == 'LOCA'){
+            var idx1loca = j;
+            loca = 'on';
+        } 
+        if(loca == 'on' & data[j][0] == ''){
+            var idx2loca = j-1;
+            loca = 'off';
+        }
+        // SCPG idx for split
+        if(data[j][1] == 'SCPG'){
+            var idx1scpg = j;
+            scpg = 'on';
+        } 
+        if(scpg == 'on' & data[j][0] == ''){
+            var idx2scpg = j-1;
+            scpg = 'off';
+        }
+        // SCPT idx for split            
+        if(data[j][1] == 'SCPT'){
+            var idx1scpt = j;
+            scpt = 'on';
+        } 
+        if(scpt == 'on' & data[j][0] == ''){
+            var idx2scpt = j-1;
+            scpt = 'off';
+        }
+        // GEOL idx for split            
+        if(data[j][1] == 'GEOL'){
+            var idx1scpt = j;
+            scpt = 'on';
+        } 
+        if(scpt == 'on' & data[j][0] == ''){
+            var idx2scpt = j-1;
+            scpt = 'off';
+        }
+    }
+
+    // LOCA info    
+    var rows = data.slice(idx1loca,idx2loca);
+    var l = rows.length;
+    var head = rows[1];
+    var idx_id = head.indexOf("LOCA_ID");
+    var idx_lat = head.indexOf("LOCA_LAT");
+    var idx_lon = head.indexOf("LOCA_LON");
+    var idx_gl = head.indexOf("LOCA_GL");
+    var idx_fdep = head.indexOf("LOCA_FDEP");
+    var idx_date = head.indexOf("LOCA_STAR");
+    var idx_rem = head.indexOf("LOCA_REM");    
+    
+    var locaid = rows[4][idx_id];
+    var lat = rows[4][idx_lat];
+    var lon = rows[4][idx_lon];
+    var gl = rows[4][idx_gl];
+    var fdep = rows[4][idx_fdep];
+    var date = rows[4][idx_date];
+    var rem = rows[4][idx_rem];
+            
+    graph.style.height = fdep*40+'px';
+        
+    var title = "<b>"+locaid+"</b><br>Lat/Long: "+lat+" / "+lon+"<br>Date: "+date;
+        
+    if(type==='SCPG'){
+        // Title from LOCA and SCPG
+        
+        var rows = data.slice(idx1scpt,idx2scpt);
+        var l = rows.length;
+        var head = rows[1];
+        
+        var idx_depth = head.indexOf("SCPT_DPTH");
+        var idx_qc = head.indexOf("SCPT_RES");
+        var idx_fr = head.indexOf("SCPT_FRES");
+        var idx_pw = head.indexOf("SCPT_PWP2");
+        
+        var depth = new Array(l-4);
+        var qc = new Array(l-4);
+        var fs = new Array(l-4);
+        var u2 = new Array(l-4);
+        
+        for(j=0;j<l-4;j++){
+            depth[j] = rows[j+4][idx_depth];
+            qc[j] = rows[j+4][idx_qc];
+            fs[j] = rows[j+4][idx_fr];
+            u2[j] = rows[j+4][idx_pw];
+        }
+        
+        var tipplotdata={
+            x : qc,
+            y : depth
+        };
+        var sleeveplotdata = {
+            x : fs,
+            y : depth,
+            xaxis: 'x2',
+            yaxis: 'y2'
+        };
+        var porepressureplotdata = {
+            x : u2,
+            y : depth,
+            xaxis: 'x3',
+            yaxis: 'y3'
+        };
+        var cptplotdata = [tipplotdata,sleeveplotdata,porepressureplotdata];
+        Plotly.newPlot(graph, cptplotdata, cptplotlayout(title));
+    }
+    </script>
+
+</body>
+</html>

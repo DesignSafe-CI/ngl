@@ -1,0 +1,5 @@
+GROUP,PROJ
+HEADING,PROJ_ID,PROJ_NAME,PROJ_LAT,PROJ_LON,PROJ_ELEV,PROJ_GEOL,PROJ_REM
+UNIT,,,deg,deg,m,,
+TYPE,ID,X,5DP,5DP,0DP,X,X
+DATA,18,"Site 80",-43.514007,172.588811,12.5,"Dominantly alluvial sand and silt overbank deposits - Christchurch geology 1992",

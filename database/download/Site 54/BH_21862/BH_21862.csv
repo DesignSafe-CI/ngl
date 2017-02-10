@@ -1,0 +1,68 @@
+GROUP,LOCA
+HEADING,LOCA_ID,LOCA_LAT,LOCA_LON,LOCA_TYPE,LOCA_GL,LOCA_FDEP,LOCA_STAR,LOCA_ENDD,LOCA_REM
+UNIT,,deg,deg,,m,m,yyyy-mm-dd,yyyy-mm-dd,
+TYPE,ID,5DP,5DP,PA,2DP,2DP,DT,DT,X
+DATA,BH_21862,-43.392815,172.660087,HDPH,2.43,10.45,16/05/2013,16/05/2013,
+" "
+GROUP,HDPH
+HEADING,LOCA_ID,HDPH_TYPE,HDPH_WAT,HDPH_CREW,HDPH_REM
+UNIT,,,m,,
+TYPE,ID,X,2DP,X,X
+DATA,BH_21862,"PQDT/RM/Auto SPT",1,"Tonkin & Taylor Ltd",
+" "
+" "
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_21862,0,0.2,OL,,"Organic SILT with trace rootlets and trace sand, dark brown, firm, moist, low plasticity, slow dilatancy. Organics are amorphous. Sand is fine to medium."
+DATA,BH_21862,0.2,0.3,SP,,"Fine to medium SAND with trace silt, brown, loose, moist, poorly graded."
+DATA,BH_21862,0.45,1,,,
+DATA,BH_21862,1,1.35,SW,,"Fine to coarse SAND with minor gravel and trace silt, brown, loose, wet, well graded. Gravel is fine to medium, subangular to subrounded."
+DATA,BH_21862,1.45,2,,,
+DATA,BH_21862,2,2.4,ML,,"SILT with trace sand, grey, soft, wet, low plasticity, slow dilatancy. Sand is fine to medium."
+DATA,BH_21862,2.45,3,,,
+DATA,BH_21862,3,3.4,SM,,"Silty fine to coarse SAND, grey, loose, wet, well graded."
+DATA,BH_21862,3.45,4,,,
+DATA,BH_21862,4,4.1,GW,,"Sandy fine to medium GRAVEL with trace silt, grey, subangular to rounded, medium dense, wet, well graded. Sand is fine to coarse."
+DATA,BH_21862,4.45,5,,,
+DATA,BH_21862,5.45,7.15,,,
+DATA,BH_21862,6,,,,
+DATA,BH_21862,7.15,7.4,SW,,"Fine to coarse SAND with minor silt and trace gravel, brownish grey, dense, wet, well graded. Gravel is fine to medium, subangular to rounded."
+DATA,BH_21862,7.4,7.7,GP,,"Sandy fine to medium GRAVEL with minor silt, brownish grey, subangular to rounded, dense, wet, poorly graded. Sand is fine to coarse."
+DATA,BH_21862,7.7,9,SP,,"Fine to medium SAND with minor silt, brownish grey, medium dense, wet, poorly graded."
+DATA,BH_21862,9.45,10,,,
+DATA,BH_21862,10,10.45,GP,,"Fine to medium GRAVEL with trace sand and trace silt, dark grey, subangular to rounded, medium dense, wet, poorly graded. Sand is fine to coarse."
+DATA,BH_21862,0.3,0.45,GW,,"0.3 to 0.45m- no recovery."
+DATA,BH_21862,1.35,1.45,,,"1.35 to 1.45m- no recovery."
+DATA,BH_21862,2.4,2.45,,,"2.4 to 2.45m- no recovery."
+DATA,BH_21862,3.4,3.45,,,"3.4 to 3.45m- no recovery."
+DATA,BH_21862,4.1,4.45,,,"4.1 to 4.45m- no recovery."
+DATA,BH_21862,5,5.45,,,"5.0 to 5.45m- no recovery."
+DATA,BH_21862,9,9.45,,,"9.0 to 9.45m- no recovery."
+" "
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_21862,5.01,"5.0m- loose."
+DATA,BH_21862,6,"6.0m- dense."
+DATA,BH_21862,7.6,"7.6m- medium dense."
+DATA,BH_21862,9.01,"9.0m- very dense."
+DATA,BH_21862,10.45,"End of borehole at 10.45mbgl (target depth)"
+" "
+GROUP,ISPT
+HEADING,LOCA_ID,ISPT_TOP,ISPT_TPEN,ISPT_NVAL,ISPT_ERAT,ISPT_MECH,ISPT_METH,ISPT_REM
+UNIT,,m,cm,,%,,,
+TYPE,ID,2DP,1DP,0DP,0DP,X,X,X
+DATA,BH_21862,0,45,7,,,,
+DATA,BH_21862,1,45,6,,,,
+DATA,BH_21862,2,45,2,,,,
+DATA,BH_21862,3,45,10,,,,
+DATA,BH_21862,4,45,11,,,,
+DATA,BH_21862,5,45,8,,,,
+DATA,BH_21862,6,45,32,,,,
+DATA,BH_21862,7.6,45,28,,,,
+DATA,BH_21862,9,45,50,,,,
+DATA,BH_21862,10,45,24,,,,
+" "

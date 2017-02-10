@@ -1,0 +1,6 @@
+GROUP,FLDO
+HEADING,EVNG_ID,FLDO_ID,FLDO_OBSV,FLDO_TYPE,FLDO_LAT,FLDO_LON,FLDO_DESC,FLDO_FILE
+UNIT,,,,,deg,deg,,
+TYPE,ID,ID,X,X,5DP,5DP,X,X
+DATA,4,,mdsp_ldfm_sttl_sndb,dspv,35.637973,139.933789,"Displacement vector of sea wall",
+DATA,4,,mdsp_ldfm_sttl_sndb,phto,35.637863,139.933240,"Recon. photo by GEER team",

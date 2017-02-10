@@ -1,0 +1,5 @@
+GROUP,PROJ
+HEADING,PROJ_ID,PROJ_NAME,PROJ_LAT,PROJ_LON,PROJ_ELEV,PROJ_GEOL,PROJ_REM
+UNIT,,,deg,deg,m,,
+TYPE,ID,X,5DP,5DP,0DP,X,X
+DATA,20,"Site 54",-43.392772,172.659937,2.5,"Beach sand or river sand dunes, active - Christchurch geology 2008",

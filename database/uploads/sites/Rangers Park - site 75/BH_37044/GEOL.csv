@@ -1,0 +1,7 @@
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_37044,0,0.9,,,"Roading aggregate; fine to coarse."
+DATA,BH_37044,0.9,2,,,"Fine to medium SAND of alluvial overbank deposits; grey."
+DATA,BH_37044,2,19.95,,,"Fine to coarse SAND of dune and beach deposits, with local trace organics."

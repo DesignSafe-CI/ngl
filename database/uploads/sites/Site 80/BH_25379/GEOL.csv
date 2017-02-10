@@ -1,0 +1,16 @@
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_25379,0,0.1,,,"TOPSOIL: SILT, trace fine sand; dark brown. Moist to wet, rootlets."
+DATA,BH_25379,0.1,0.5,,,"FILL: SILT, trace fine sand; dark brown.  Stiff to hard. dry to moist."
+DATA,BH_25379,0.5,1,,,"Sandy fine to coarse GRAVEL with some silt; grey and brown to dark brown. Medium dense; moist to wet; subrounded; sand, fine to medium. (POSSIBLE FILL/REWORKED IN-SITU)"
+DATA,BH_25379,1,2,,,"Sandy fine to coarse GRAVEL with minor silt; grey and brown. Medium dense; moist to wet; sub-rounded; sand, fine to medium."
+DATA,BH_25379,11,14,,,"Medium to coarse SAND with trace gravel; grey. Medium dense, wet; gravel, sub-rounded, fine."
+DATA,BH_25379,14,15.83,,,"Sandy fine to coarse GRAVEL with minor silt;  brown. Very dense; saturated; gravel, sub-angular to sub-rounded; sand, fine to medium."
+DATA,BH_25379,2,3.35,,,"Silty fine to medium SAND with some gravel, dark brown.   Medium dense; wet; gravel,  fine to medium, sub-rounded."
+DATA,BH_25379,3.35,3.9,,,"SILT, trace fine sand and trace clay; brownish grey. Soft to firm, saturated, low plasticity."
+DATA,BH_25379,3.9,5,,,"Silty fine SAND; brownish grey. Very loose, saturated. "
+DATA,BH_25379,5,5.1,,,"SILT with some fine sand; dark grey. Soft to firm; low plasticity; saturated."
+DATA,BH_25379,5.1,9.1,,,"Silty fine SAND; dark grey. Medium dense, saturated."
+DATA,BH_25379,9.1,11,,,"Medium SAND with minor silt; greyish brown. Medium dense to dense, saturated."

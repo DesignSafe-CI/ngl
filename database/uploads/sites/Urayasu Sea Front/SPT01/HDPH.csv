@@ -1,0 +1,5 @@
+GROUP,HDPH
+HEADING,LOCA_ID,HDPH_TYPE,HDPH_WAT,HDPH_CREW,HDPH_REM
+UNIT,,,m,,
+TYPE,ID,X,2DP,X,X
+DATA,SPT01,"Rotary wash",1.51,"TK and YH - Jibanshikenjo Co., Ltd.",

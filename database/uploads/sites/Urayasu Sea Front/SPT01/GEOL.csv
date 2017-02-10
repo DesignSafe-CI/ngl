@@ -1,0 +1,11 @@
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,SPT01,0,3,F,,"FILL. SILTY CLAYEY SAND: fine to medium, dark olive gray, very moist. "
+DATA,SPT01,3,5,SC,,"SILTY CLAYEY SAND: fine to medium, black, with shells and few traces of organics. "
+DATA,SPT01,5,9,C,,"CLAY: high plasticity, black. "
+DATA,SPT01,9,11,SM,,"SILTY SAND: fine poorly−graded, black, with shells, plant fragments and trace of light weight porous rocks. "
+DATA,SPT01,11,12,SC,,"CLAYEY SAND: fine, black, with shells."
+DATA,SPT01,12,13,CM,,"SILTY CLAY: low plasticity, black, slighty sandy. "
+DATA,SPT01,13,15.45,SM,,"SILTY SAND: fine, black, moist. @13.3, poorly−graded, with thin layer of weathered rock. "

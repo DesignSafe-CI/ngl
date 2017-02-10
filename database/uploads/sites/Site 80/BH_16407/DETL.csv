@@ -1,0 +1,16 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_16407,0.7,"0.7m- wet."
+DATA,BH_16407,2.1,"2.1 to 2.3m- trace broken shells."
+DATA,BH_16407,3.5,"3.5 to 5.5m- trace broken shells."
+DATA,BH_16407,4.95,"4.95m- grey."
+DATA,BH_16407,6,"6.0m- soft."
+DATA,BH_16407,9,"9.0m- firm."
+DATA,BH_16407,10.5,"10.5m- stiff."
+DATA,BH_16407,12,"12.0m- very stiff."
+DATA,BH_16407,13,"13.0m- yellowish brown."
+DATA,BH_16407,15.45,"15.45m- dark greenish grey."
+DATA,BH_16407,16.5,"16.5m- medium dense."
+DATA,BH_16407,19.5,"End of borehole at 19.5mbgl (target depth)"

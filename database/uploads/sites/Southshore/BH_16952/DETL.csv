@@ -1,0 +1,13 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_16952,1.15,"1.15m- grey."
+DATA,BH_16952,1.2,"1.2m- minor silt"
+DATA,BH_16952,1.5,"1.5m- medium dense, wet."
+DATA,BH_16952,3,"3.0m- trace silt, loose"
+DATA,BH_16952,3.45,"3.45m- trace broken shells"
+DATA,BH_16952,"3.8 - 4.0","3.8 - 4.0m- trace fine to medium gravel, subrounded"
+DATA,BH_16952,7.5,"7.5m- medium dense."
+DATA,BH_16952,8.7,"8.7m- minor silt."
+DATA,BH_16952,9.0,"9.0m- some silt"

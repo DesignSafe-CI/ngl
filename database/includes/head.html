@@ -1,0 +1,23 @@
+    <!--Start of header-->
+    <div id='head' class='wrapper'> 
+        <div id='head' class='headerImage'> 
+<!--            <img src='images/PEER_logo-name_white-bg_sm.png' alt='PEER' height="80px"> -->
+            <img src='images/NGLlogo.png' alt='NGL'> 
+            
+        </div>        
+        <div id='head' class='signout'>
+            <?php echo $_SESSION['user']; ?><br>
+            <a href='login.php'><?php echo $signout;?></a>
+        </div> 
+    </div>
+    
+    <div id='head' class='menuBar'>
+        <ul>
+            <li style='float:left'><a href='index.php'>Home</a></li>
+            <li style='float:left'><a href='map.php'>Map</a></li>
+            <li style='float:left'><a href='download.php'>Download</a></li>
+            <li style='float:left'><a href='upload_PROJ.php'>Upload</a></li>
+            <li style='float:left'><a href='users.php'>Users</a></li>
+            <li style='float:left'><a href='help.php'>Help</a></li>
+        </ul>
+    </div>    

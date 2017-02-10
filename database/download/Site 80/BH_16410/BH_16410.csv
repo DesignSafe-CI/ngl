@@ -1,0 +1,53 @@
+GROUP,LOCA
+HEADING,LOCA_ID,LOCA_LAT,LOCA_LON,LOCA_TYPE,LOCA_GL,LOCA_FDEP,LOCA_STAR,LOCA_ENDD,LOCA_REM
+UNIT,,deg,deg,,m,m,yyyy-mm-dd,yyyy-mm-dd,
+TYPE,ID,5DP,5DP,PA,2DP,2DP,DT,DT,X
+DATA,BH_16410,-43.513587,172.589462,HDPH,12.77,19.95,2012-05-11,2012-05-11,
+" "
+GROUP,HDPH
+HEADING,LOCA_ID,HDPH_TYPE,HDPH_WAT,HDPH_CREW,HDPH_REM
+UNIT,,,m,,
+TYPE,ID,X,2DP,X,X
+DATA,BH_16410,"PQDT/Auto SPT",0.95,"Tonkin & Taylor Ltd",
+" "
+" "
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_16410,0,0.01,,,ASPHALT
+DATA,BH_16410,0.01,0.1,GP,,"Sandy fine to medium GRAVEL with minor silt, brownish grey, moist, poorly graded. Sand is fine to coarse."
+DATA,BH_16410,0.1,0.95,ML,,"Sandy SILT with some gravel, brown, moist, low plasticity. Gravel is fine to medium, subangular. Sand is fine to coarse."
+DATA,BH_16410,0.95,4.2,GW,,"Sandy fine to coarse GRAVEL with trace silt, brown, subrounded, medium dense, wet, well graded. Sand is fine to coarse."
+DATA,BH_16410,4.2,5.5,ML,,"Sandy SILT with some gravel and minor organics, grey, very stiff, wet, low plasticity to non plastic. Sand is fine to coarse. Gravel is fine, subangular. Organics are fibrous."
+DATA,BH_16410,5.5,9.3,SM,,"Silty fine to medium SAND, grey, loose, wet, poorly graded."
+DATA,BH_16410,9.3,15.45,GW,,"Sandy fine to coarse GRAVEL with trace silt, brown, subrounded, medium dense, wet, well graded. Sand is fine to coarse."
+DATA,BH_16410,15.45,15.6,SP,,"Roading aggregate; fine to coarse."
+DATA,BH_16410,15.6,19.95,GW,,"Fine to medium SAND of alluvial overbank deposits; grey."
+" "
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_16410,1.5,"1.5m- dense."
+DATA,BH_16410,3.6,"3.6m - gravel becomes orange brown."
+DATA,BH_16410,17,"17.0m - brown."
+DATA,BH_16410,19.8,"End of borehole at 19.95mbgl (target depth)"
+" "
+GROUP,ISPT
+HEADING,LOCA_ID,ISPT_TOP,ISPT_TPEN,ISPT_NVAL,ISPT_ERAT,ISPT_MECH,ISPT_METH,ISPT_REM
+UNIT,,m,cm,,%,,,
+TYPE,ID,2DP,1DP,0DP,0DP,X,X,X
+DATA,BH_16410,1.5,45,31,,,,
+DATA,BH_16410,3,45,21,,,,
+DATA,BH_16410,4.5,45,10,,,,
+DATA,BH_16410,6,45,4,,,,
+DATA,BH_16410,7.5,45,8,,,,
+DATA,BH_16410,9,45,22,,,,
+DATA,BH_16410,10.5,45,50,,,,
+DATA,BH_16410,12,45,24,,,,
+DATA,BH_16410,13.5,45,50,,,,
+DATA,BH_16410,15,45,27,,,,
+DATA,BH_16410,16.5,45,44,,,,
+DATA,BH_16410,18,45,50,,,,
+" "

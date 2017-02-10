@@ -1,0 +1,7 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,SPT01,2.3,"very dark gray."
+DATA,SPT01,4.3,"with shells."
+DATA,SPT01,7.2,"with trace of fine sand."

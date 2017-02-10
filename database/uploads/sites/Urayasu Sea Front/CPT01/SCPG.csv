@@ -1,0 +1,5 @@
+GROUP,SCPG
+HEADING,LOCA_ID,SCPG_CSA,SCPG_RATE,SCPG_WAT,SCPG_CREW,SCPG_METH,SCPG_REM
+UNIT,,cm2,cm/s,m,,,
+TYPE,ID,0DP,2DP,2DP,X,X,X
+DATA,CPT01,10,2,1.73,"TK and IY - Jibanshikenjo Co., Ltd.","Push rods, thrust mechanism and reaction frame",

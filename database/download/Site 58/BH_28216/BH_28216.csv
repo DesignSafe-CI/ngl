@@ -1,0 +1,58 @@
+GROUP,LOCA
+HEADING,LOCA_ID,LOCA_LAT,LOCA_LON,LOCA_TYPE,LOCA_GL,LOCA_FDEP,LOCA_STAR,LOCA_ENDD,LOCA_REM
+UNIT,,deg,deg,,m,m,yyyy-mm-dd,yyyy-mm-dd,
+TYPE,ID,5DP,5DP,PA,2DP,2DP,DT,DT,X
+DATA,BH_28216,-43.590478,172.568172,HDPH,12.78,15.45,2013-01-02,2013-01-02,
+" "
+GROUP,HDPH
+HEADING,LOCA_ID,HDPH_TYPE,HDPH_WAT,HDPH_CREW,HDPH_REM
+UNIT,,,m,,
+TYPE,ID,X,2DP,X,X
+DATA,BH_28216,RO,0.8,"Golder Associates (NZ) Ltd.",
+" "
+" "
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_28216,0,0.2,,,"Organic SILT; black. Dry to moist; low plasticity; organics, rootlets."
+DATA,BH_28216,0.2,0.5,,,"Silty fine SAND; brown with orange mottling. Dry; poorly graded; low plasticity."
+DATA,BH_28216,0.5,0.75,,,"Fine SAND with minor silt; brown. Moist; poorly graded."
+DATA,BH_28216,0.75,1,,,"Fine to medium SAND with some silt; grey. Very loose; wet; poorly graded."
+DATA,BH_28216,1,2.1,,,"Trace organics below 1.0 m."
+DATA,BH_28216,10.25,11.2,,,"Fine to coarse SAND; grey. Loose; wet; poorly graded."
+DATA,BH_28216,11.2,12,,,"SILT with wood fragments; blackish brown.  Stiff to very stiff, wet; low plasticity."
+DATA,BH_28216,12,12.45,,,WOOD
+DATA,BH_28216,12.45,13.6,,,"SILT with wood fragments; blackish brown.  Stiff to very stiff, wet; low plasticity."
+DATA,BH_28216,13.6,15,,,"Sandy fine to coarse GRAVEL; grey. Very dense; moist; well graded; sub-angular to rounded; sand is fine to coarse."
+DATA,BH_28216,15,15.45,,,"Minor coarse sand, orangy brown below 15.0 m."
+DATA,BH_28216,2.1,4.35,,,"SILT with minor sand and trace organics; grey. Soft; wet; low plasticity; sand, fine; organics, rootlets."
+DATA,BH_28216,4.35,5,,,"Fine to medium SAND with some silt; grey. Loose; wet; poorly graded."
+DATA,BH_28216,5,5.45,,,"Sandy SILT; grey. Very soft to soft; wet; low plasticity."
+DATA,BH_28216,5.45,7,,,"SILT with trace organics; grey. Very soft; wet; high plasticity; organics, wood."
+DATA,BH_28216,7,7.8,,,"becoming firm and greenish grey with minor shell fragments below 7.0 m."
+DATA,BH_28216,7.8,8.9,,,"Fine to medium SAND with minor silt; grey. Medium dense; wet; poorly graded."
+DATA,BH_28216,8.9,9.6,,,"SILT with trace sand and trace organics; grey. Soft; wet; low plasticity; organics rootlets."
+DATA,BH_28216,9.6,10.25,,,"WOOD with minor silt; brown. Hard; wet; low plasticity"
+" "
+" "
+GROUP,ISPT
+HEADING,LOCA_ID,ISPT_TOP,ISPT_TPEN,ISPT_NVAL,ISPT_ERAT,ISPT_MECH,ISPT_METH,ISPT_REM
+UNIT,,m,cm,,%,,,
+TYPE,ID,2DP,1DP,0DP,0DP,X,X,X
+DATA,BH_28216,1,30,2,,,,
+DATA,BH_28216,10,30,12,,,,
+DATA,BH_28216,11,30,7,,,,
+DATA,BH_28216,12,30,25,,,,
+DATA,BH_28216,13,30,9,,,,
+DATA,BH_28216,14,19,51,,,,
+DATA,BH_28216,15,30,52,,,,
+DATA,BH_28216,2,30,4,,,,
+DATA,BH_28216,3,30,2,,,,
+DATA,BH_28216,4,30,6,,,,
+DATA,BH_28216,5,30,2,,,,
+DATA,BH_28216,6,30,2,,,,
+DATA,BH_28216,7,30,8,,,,
+DATA,BH_28216,8,30,11,,,,
+DATA,BH_28216,9,30,3,,,,
+" "

@@ -1,0 +1,14 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_25379,11.2,"fibrous wood chunk to 11.45 m bgl; brown."
+DATA,BH_25379,11.45,"becomes trace subrounded fine to coarse gravel (grey)."
+DATA,BH_25379,11.5,"frequent fibrous wood fragments up to approximately 20 mm length to approximately 11.6 m bgl."
+DATA,BH_25379,11.8,"becomes minor to some subrounded fine to coarse gravel."
+DATA,BH_25379,12.05,"fibrous wood chunk to approximately 12.15 m bgl."
+DATA,BH_25379,12.25,"fibrous wood chunk to approximately 12.5 m bgl."
+DATA,BH_25379,12.5,"becomes brownish grey."
+DATA,BH_25379,13.3,"no gravel to approximately 13.6 m bgl."
+DATA,BH_25379,6.5,"SILT with trace fine sand to approximately 6.7 m bgl."
+DATA,BH_25379,6.9,"becomes fine to medium sand, some silt."

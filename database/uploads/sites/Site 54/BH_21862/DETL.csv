@@ -1,0 +1,9 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_21862,5.01,"5.0m- loose."
+DATA,BH_21862,6,"6.0m- dense."
+DATA,BH_21862,7.6,"7.6m- medium dense."
+DATA,BH_21862,9.01,"9.0m- very dense."
+DATA,BH_21862,10.45,"End of borehole at 10.45mbgl (target depth)"

@@ -1,0 +1,60 @@
+GROUP,LOCA
+HEADING,LOCA_ID,LOCA_LAT,LOCA_LON,LOCA_TYPE,LOCA_GL,LOCA_FDEP,LOCA_STAR,LOCA_ENDD,LOCA_REM
+UNIT,,deg,deg,,m,m,yyyy-mm-dd,yyyy-mm-dd,
+TYPE,ID,5DP,5DP,PA,2DP,2DP,DT,DT,X
+DATA,BH_25379,-43.513806,172.589091,HDPH,12.33,15.83,2012-05-03,2012-05-03,
+" "
+GROUP,HDPH
+HEADING,LOCA_ID,HDPH_TYPE,HDPH_WAT,HDPH_CREW,HDPH_REM
+UNIT,,,m,,
+TYPE,ID,X,2DP,X,X
+DATA,BH_25379,RO,1.2,"Golder Associates (NZ) Ltd",
+" "
+" "
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_25379,0,0.1,,,"TOPSOIL: SILT, trace fine sand; dark brown. Moist to wet, rootlets."
+DATA,BH_25379,0.1,0.5,,,"FILL: SILT, trace fine sand; dark brown.  Stiff to hard. dry to moist."
+DATA,BH_25379,0.5,1,,,"Sandy fine to coarse GRAVEL with some silt; grey and brown to dark brown. Medium dense; moist to wet; subrounded; sand, fine to medium. (POSSIBLE FILL/REWORKED IN-SITU)"
+DATA,BH_25379,1,2,,,"Sandy fine to coarse GRAVEL with minor silt; grey and brown. Medium dense; moist to wet; sub-rounded; sand, fine to medium."
+DATA,BH_25379,11,14,,,"Medium to coarse SAND with trace gravel; grey. Medium dense, wet; gravel, sub-rounded, fine."
+DATA,BH_25379,14,15.83,,,"Sandy fine to coarse GRAVEL with minor silt;  brown. Very dense; saturated; gravel, sub-angular to sub-rounded; sand, fine to medium."
+DATA,BH_25379,2,3.35,,,"Silty fine to medium SAND with some gravel, dark brown.   Medium dense; wet; gravel,  fine to medium, sub-rounded."
+DATA,BH_25379,3.35,3.9,,,"SILT, trace fine sand and trace clay; brownish grey. Soft to firm, saturated, low plasticity."
+DATA,BH_25379,3.9,5,,,"Silty fine SAND; brownish grey. Very loose, saturated. "
+DATA,BH_25379,5,5.1,,,"SILT with some fine sand; dark grey. Soft to firm; low plasticity; saturated."
+DATA,BH_25379,5.1,9.1,,,"Silty fine SAND; dark grey. Medium dense, saturated."
+DATA,BH_25379,9.1,11,,,"Medium SAND with minor silt; greyish brown. Medium dense to dense, saturated."
+" "
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_25379,11.2,"fibrous wood chunk to 11.45 m bgl; brown."
+DATA,BH_25379,11.45,"becomes trace subrounded fine to coarse gravel (grey)."
+DATA,BH_25379,11.5,"frequent fibrous wood fragments up to approximately 20 mm length to approximately 11.6 m bgl."
+DATA,BH_25379,11.8,"becomes minor to some subrounded fine to coarse gravel."
+DATA,BH_25379,12.05,"fibrous wood chunk to approximately 12.15 m bgl."
+DATA,BH_25379,12.25,"fibrous wood chunk to approximately 12.5 m bgl."
+DATA,BH_25379,12.5,"becomes brownish grey."
+DATA,BH_25379,13.3,"no gravel to approximately 13.6 m bgl."
+DATA,BH_25379,6.5,"SILT with trace fine sand to approximately 6.7 m bgl."
+DATA,BH_25379,6.9,"becomes fine to medium sand, some silt."
+" "
+GROUP,ISPT
+HEADING,LOCA_ID,ISPT_TOP,ISPT_TPEN,ISPT_NVAL,ISPT_ERAT,ISPT_MECH,ISPT_METH,ISPT_REM
+UNIT,,m,cm,,%,,,
+TYPE,ID,2DP,1DP,0DP,0DP,X,X,X
+DATA,BH_25379,11,30,16,,,,
+DATA,BH_25379,12.5,30,28,,,,
+DATA,BH_25379,14,19.5,48,,,,
+DATA,BH_25379,15.5,18,50,,,,
+DATA,BH_25379,2,30,27,,,,
+DATA,BH_25379,3.5,30,1,,,,
+DATA,BH_25379,5,30,11,,,,
+DATA,BH_25379,6.5,30,1,,,,
+DATA,BH_25379,8,30,15,,,,
+DATA,BH_25379,9.5,30,47,,,,
+" "

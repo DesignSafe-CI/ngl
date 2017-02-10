@@ -1,0 +1,6 @@
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_16952,0,0.5,GW,,"Sandy fine to coarse GRAVEL with minor silt, brownish grey, angular to subangular, moist, well graded. Sand is fine to coarse."
+DATA,BH_16952,0.5,10.95,SP,,"Fine to medium SAND with some silt, brownish grey, moist, poorly graded."

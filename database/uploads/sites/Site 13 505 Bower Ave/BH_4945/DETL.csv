@@ -1,0 +1,12 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_4945,1.5,"1.5m- loose."
+DATA,BH_4945,2.3,"2.3m- grey."
+DATA,BH_4945,3,"3.0m- medium dense."
+DATA,BH_4945,10,"Fine to medium SAND with trace silt, grey, medium dense, wet, poorly graded."
+DATA,BH_4945,10.95,"10.95m- minor silt."
+DATA,BH_4945,15.8,"15.8 to 17.6m- trace broken shells."
+DATA,BH_4945,16.5,"16.5m- dense."
+DATA,BH_4945,19.8,"End of borehole at 19.95mbgl (target depth)"

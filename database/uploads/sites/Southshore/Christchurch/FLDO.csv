@@ -1,0 +1,5 @@
+GROUP,FLDO
+HEADING,EVNG_ID,FLDO_ID,FLDO_OBSV,FLDO_TYPE,FLDO_LAT,FLDO_LON,FLDO_DESC,FLDO_FILE
+UNIT,,,,,deg,deg,,
+TYPE,ID,ID,X,X,5DP,5DP,X,X
+DATA,8,,sndb,geom,-43.55,172.75,"No lateral spreading but minor to moderate quantities of ejected material",

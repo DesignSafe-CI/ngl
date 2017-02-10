@@ -1,0 +1,8 @@
+GROUP,DETL
+HEADING,LOCA_ID,DETL_DPTH,DETL_DESC
+UNIT,,m,
+TYPE,ID,2DP,X
+DATA,BH_16410,1.5,"1.5m- dense."
+DATA,BH_16410,3.6,"3.6m - gravel becomes orange brown."
+DATA,BH_16410,17,"17.0m - brown."
+DATA,BH_16410,19.8,"End of borehole at 19.95mbgl (target depth)"

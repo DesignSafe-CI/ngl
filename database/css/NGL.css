@@ -1,0 +1,683 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+}
+/*///////////// Style for file upload ///////////////*/
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    width:100px;
+	height:17px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bolder;
+	text-transform:uppercase;
+    margin-left:2px;
+    margin-right:2px;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer; /* "hand" cursor */
+}
+/*///////////// Style for header image and menu bar ///////////////*/
+#head.signout
+{
+	float: right;
+    align-content: :relative;		
+	color:#fff;
+    font-size:0.9em;
+	display: inline;
+	vertical-align:middle;
+	height: 20px;
+    padding: 10px 3px 3px 3px;
+}
+#head.signout a
+{
+    float: right;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 3px 3px 3px 3px;
+	background-color: #3284BF;
+	height: 20px;
+}
+#head.signout a[href]:hover
+{
+    color: #FFB300;
+	background-color: #3284BF;
+	height: 20px;
+}
+#head.wrapper {
+    position: relative; 
+	width: 100%;
+	background-color: #3284BF;
+	height: 52px;
+    margin-right: auto;
+	margin-left: auto;
+}
+#head.headerImage {
+	display:inline;
+	float: left;
+	margin-left: auto;
+	font-family:Calibri;
+	font-style:italic;
+	color:white;
+	vertical-align:middle;
+    height: 52px;
+    margin-bottom: 0px;
+}
+#head.menuBar {
+    position: relative; 
+    width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+    height: 27px;
+}
+#head.menuBar ul {
+	text-decoration: none;
+	padding: 0px 0px 3px 0px;
+	margin: 0px;
+	background-color: #3284BF;
+	height: 20px;
+	width: 100%;
+}
+#head.menuBar li {
+	font-size:0.8em;
+	display: inline;
+	vertical-align:middle;
+	height: 20px;
+}
+#head.menuBar li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 3px 10px 3px 10px;
+	background-color: #3284BF;
+	height: 20px;
+}
+#head.menuBar li a[href]:hover {
+	color: #FFB300;
+	background-color: #3284BF;
+	height: 20px;
+}
+#head.text {
+    text-align: center;
+	width: 100%px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*/////////////////////////////////////////////////////////////////*/
+
+/*////////////////////// Style for table input ////////////////////*/
+#index table
+{
+    background:#ADC3DF;
+    padding: 10px;
+    border-spacing: 10px 10px;
+}
+#index table tr, td
+{
+    font-size: 14px;    
+}
+#index table tr td input
+{
+	width: 90%;
+	height:17px;
+    font-size:12px;
+}
+/*/////////////////////////////////////////////////////////////////*/
+
+/*////////////////////// Style for menus ////////////////////*/
+#upload.menus table
+{
+    padding-bottom: 10px;
+    border-spacing: 0px 0px;
+}
+#upload.menus table tr.mainmenu td
+{    
+	width:150px;
+	height:20px;
+	border:0px;
+    background:#ADC3DF;	
+    color:#f9f9f9;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bolder;
+    text-align:center;
+	text-transform:uppercase;
+    text-decoration: none;
+}
+    
+
+#upload.menu table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+#upload.body table
+{
+/*    table-layout:fixed;*/
+    float: left;
+    background:#ADC3DF;
+    padding: 10px;
+    border-spacing: 5px 1px;    
+}
+#upload.body table tr td
+{
+    font-size:12px;
+    vertical-align: middle;
+    line-height:120%;
+}
+#upload.body table tr td.head
+{
+    border-top: 2px solid #3284BF;
+    padding-bottom: 2px;
+    font-size:  14px;
+    font-weight:bolder;
+    text-transform:uppercase;
+    color:#3284BF;	
+    text-align:center;
+}
+#upload.body table tr td.subhead
+{
+    border-top: 2px solid black;
+    padding-bottom: 2px;
+    font-size:  14px;
+    font-weight:bolder;
+    color:black;	
+    text-align:center;
+}
+#upload.body table tr td.reviewhead
+{
+    border-top: 1px solid black;
+    padding-bottom: 2px;
+    font-size:  14px;
+    color:black;	
+    text-align: left;
+}
+
+#upload.body table tr td button
+{    
+	width:75px;
+	height:18px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bolder;
+	text-transform:uppercase;    
+    cursor: pointer; /* "hand" cursor */
+}
+#upload.body table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+#upload.body table tr td input
+{
+	width: 100%;
+	height:17px;
+    font-size:12px;    
+    padding:0px;
+}
+#upload.body table tr td input.check
+{
+	width: 14px;
+    height:14px;    
+}
+#upload.body table tr td input.readonly
+{
+	background-color:aliceblue;
+    border-color:aliceblue;    
+}
+#upload.body table tr td input.button
+{    
+	width:50px;
+	height:17px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bolder;
+	text-transform:uppercase;
+    margin-left:2px;
+    vertical-align: middle;
+    cursor: pointer; /* "hand" cursor */
+}
+#upload.body table tr td input.button:active
+{
+	position:relative;
+	top:1px;
+}
+#upload.body table tr td input.button-large
+{    
+	width:75px;
+	height:20px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bolder;
+	text-transform:uppercase;
+    margin-left:2px;
+    cursor: pointer; /* "hand" cursor */
+}
+#upload.body table tr td input.button-large:active
+{
+	position:relative;
+	top:1px;
+}
+#upload.body table.data
+{
+	tr:nth-child(even) {background-color: #f2f2f2};
+    border-collapse:collapse;
+    line-height:100%;
+}
+#upload.body table.data tr th
+{
+    font-size:10px;
+}
+#upload.body table.data tr td
+{
+    text-align:center;
+    font-size:10px;
+}
+#upload.body table.data tr td input
+{
+    text-align:center;
+    font-size:10px;
+    padding:0px;
+    border-width:0px;
+}
+
+#upload.body textarea
+{
+	width: 100%;
+	height:24px;
+    font-size:12px;
+}
+#upload.body select
+{
+    font-size:12px;
+}
+
+
+#upload.menu table
+{
+    padding: 10px;
+    border-spacing: 5px 5px;
+}
+#upload.menu table tr td button
+{    
+	width:150px;
+	height:50px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:10px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+#upload.menu table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+
+
+#upload.bodymenu table
+{    
+/*    float: left;*/
+}
+#upload.bodymenu table tr td
+{    
+    text-align:center;
+}
+#upload.bodymenu table tr td button
+{    
+    width:120px;
+	height:30px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:10px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bolder;
+	text-transform:uppercase;    
+}
+#upload.bodymenu table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+
+
+#upload.files table
+{
+    float: right;
+    padding: 1px;
+    border-spacing: 10px 1px;
+}
+#upload.files table tr td
+{
+    font-size:12px;
+    line-height:120%;
+}
+#upload.files table tr td button
+{    
+	width:50px;
+	height:15px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bolder;
+	text-transform:uppercase;
+    margin-left:2px;
+}
+#upload.files table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+
+
+#input-form table
+{
+    background:#FFFFFF;
+}
+#input-form table tr td
+{
+    text-align: center;
+}
+#input-form table tr td input
+{
+	width: 95%;
+	height:17px;
+    font-size:12px;
+}
+#input-form table tr td button
+{    
+	width:100px;
+	height:25px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+#input-form table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+#input-form table tr td a
+{
+	text-decoration:none;
+	color:#3284BF;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#input-form select
+{
+	width: 350px;	
+}
+
+.error {
+    color: #FF0000;
+    text-align: center;
+    height: 20px
+}
+/*/////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////// Style for main text //////////////////////////*/
+  
+#container.index {	
+	width: 550px;
+    line-height: 150%;
+	margin-right: auto;
+	margin-left: auto;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #536895;
+    padding:10px
+}
+#container.home {	
+	width: 1000px;
+    line-height: 150%;
+	margin-right: auto;
+	margin-left: auto;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    padding:10px;        
+}
+#container.map {	
+    position: relative; 
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+    margin-bottom: 20px;
+}
+
+#container.sidebar {
+    line-height: 150%;
+	padding:5px;
+    margin-top: 10px;
+    margin-right: 10px;
+	border: 1px solid #808080;
+	min-width: 200px;
+    width: 18%;
+	float: left;
+	font-size: 0.9em;
+	text-align: left;
+}
+#container.sidebar ul {
+	padding: 0px;
+	margin: 0px 0px 0px 3px;
+}
+#container.sidebar ul li {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+}
+#container.sidebar ul li a {
+	text-decoration: none;
+	color: #000000;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+#container.sidebar ul li a[href]:hover {
+	color: #FFFFFF;
+	background-color: #808080;
+}
+#container.sidebar table tr td{
+    font-size: 12px;
+}
+#sponsors {    
+    width: 850px;
+    border-top: 1px solid #cccccc;
+    padding:10px;
+    margin-right: auto;
+	margin-left: auto;    
+}
+#sections {
+    padding:10px;
+}
+/*/////////////////////////////////////////////////////////////////*/
+
+
+/*//////////////// Style for map //////////////////////////////////*/
+#map_user { 
+    width: 1000px; 
+    height:300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #536895;
+}
+#map_upload { 
+    float: right;
+    width: 100%; 
+    height:200px;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #536895;
+}
+
+/*//////////////// Style for download map //////////////////////////////////*/
+#map_database 
+{ 
+/*    position: relative;  */
+    width: 1100px; 
+/*    min-width: 400px;*/
+    height:100%;
+    min-height: 650px;
+    margin-left: -1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #536895;    
+/*    float: left;*/
+/*    float: left;*/
+/*    display:table;*/
+}
+#map_query
+{
+/*    float: left;*/
+    position: relative;
+    line-height: 150%;
+    margin-top: 10px;
+    margin-right: 10px;
+	font-size: 0.9em;
+	text-align: left;    
+}
+#map_query table tr td
+{
+    width: 190px;
+    font-size: 12px;
+}
+
+#map_query table tr td
+{
+    font-size: 12px;
+}
+#map_query input[type="text"]{
+    width: 80px;    
+}
+#map_query button
+{    
+	width:75px;
+	height:18px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+#map_query button:active
+{
+	position:relative;
+	top:1px;
+}
+/**/
+
+/*//////////////// Style for download table //////////////////////////////////*/
+
+#table_query table
+{
+    background:#ADC3DF;
+    padding: 10px;
+    border-spacing: 5px 1px;    
+}
+#table_query table tr td
+{
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    line-height:120%;
+}
+#table_query table tr td button
+{    
+	width:75px;
+	height:18px;
+	border:0px;
+	background:#3284BF;	
+	border-radius:3px;
+	box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	color:#f9f9f9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bolder;
+	text-transform:uppercase;    
+}
+#table_query table tr td button:active
+{
+	position:relative;
+	top:1px;
+}
+
+#table_output table td
+{
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+    padding: 1px;
+    border-spacing: 5px 1px;    
+}
+#table_output table tr:nth-child(odd)
+{
+    background: #CCC;
+}
+#table_output table tr:nth-child(even)
+{
+    background: #FFF;
+}

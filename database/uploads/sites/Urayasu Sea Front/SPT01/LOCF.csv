@@ -1,0 +1,6 @@
+GROUP,LOCF
+HEADING,LOCA_ID,LOCF_NAME,LOCF_DESC,FILE_NAME
+UNIT,,,,
+TYPE,ID,X,X,X
+DATA,SPT01,SPT01-pdf,"Boring profile, pdf format",CHB-URY-SPT01.pdf
+DATA,SPT01,SPT01-csv,"Boring profile, csv format",CHB-URY-SPT01.csv

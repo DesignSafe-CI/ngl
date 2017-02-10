@@ -1,0 +1,7 @@
+GROUP,FLDO
+HEADING,EVNG_ID,FLDO_ID,FLDO_OBSV,FLDO_TYPE,FLDO_LAT,FLDO_LON,FLDO_DESC,FLDO_FILE
+UNIT,,,,,deg,deg,,
+TYPE,ID,ID,X,X,5DP,5DP,X,X
+DATA,25,27,sndb,fldn,32.9695,-115.552,"Hundreds of sand boils",Youd_and_Bennet_1983_Liquefaction_Effects.pdf
+DATA,25,28,sndb,fldn,32.9695,-115.552,"Hundreds of sand boils",Figure_4_Youd_and_Bennet_1983.png
+DATA,25,29,ldfm,fldn,32.9695,-115.552,"Slump along the bank of the New River ",Figure_5_Youd_and_Bennet_1983.png

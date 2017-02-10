@@ -1,0 +1,13 @@
+GROUP,GEOL
+HEADING,LOCA_ID,GEOL_TOP,GEOL_BASE,GEOL_GEOL,GEOL_COL,GEOL_DESC
+UNIT,,m,m,,,
+TYPE,ID,2DP,2DP,X,X,X
+DATA,BH_16410,0,0.01,,,ASPHALT
+DATA,BH_16410,0.01,0.1,GP,,"Sandy fine to medium GRAVEL with minor silt, brownish grey, moist, poorly graded. Sand is fine to coarse."
+DATA,BH_16410,0.1,0.95,ML,,"Sandy SILT with some gravel, brown, moist, low plasticity. Gravel is fine to medium, subangular. Sand is fine to coarse."
+DATA,BH_16410,0.95,4.2,GW,,"Sandy fine to coarse GRAVEL with trace silt, brown, subrounded, medium dense, wet, well graded. Sand is fine to coarse."
+DATA,BH_16410,4.2,5.5,ML,,"Sandy SILT with some gravel and minor organics, grey, very stiff, wet, low plasticity to non plastic. Sand is fine to coarse. Gravel is fine, subangular. Organics are fibrous."
+DATA,BH_16410,5.5,9.3,SM,,"Silty fine to medium SAND, grey, loose, wet, poorly graded."
+DATA,BH_16410,9.3,15.45,GW,,"Sandy fine to coarse GRAVEL with trace silt, brown, subrounded, medium dense, wet, well graded. Sand is fine to coarse."
+DATA,BH_16410,15.45,15.6,SP,,"Roading aggregate; fine to coarse."
+DATA,BH_16410,15.6,19.95,GW,,"Fine to medium SAND of alluvial overbank deposits; grey."

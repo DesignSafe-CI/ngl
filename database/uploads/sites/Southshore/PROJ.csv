@@ -1,0 +1,5 @@
+GROUP,PROJ
+HEADING,PROJ_ID,PROJ_NAME,PROJ_LAT,PROJ_LON,PROJ_ELEV,PROJ_GEOL,PROJ_REM
+UNIT,,,deg,deg,m,,
+TYPE,ID,X,5DP,5DP,0DP,X,X
+DATA,8,Southshore,-43.55,172.75,1.5,"Dominantly sand of fixed and semi-fixed dunes and beaches - Christchurch Geology - 1992 Geological Maps",

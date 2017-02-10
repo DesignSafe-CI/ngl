@@ -1,0 +1,5 @@
+GROUP,PROJ
+HEADING,PROJ_ID,PROJ_NAME,PROJ_LAT,PROJ_LON,PROJ_ELEV,PROJ_GEOL,PROJ_REM
+UNIT,,,deg,deg,m,,
+TYPE,ID,X,5DP,5DP,0DP,X,X
+DATA,21,"Site 58",-43.590068,172.568637,12.5,"Grey river alluvium, comprising gravel, sand and silt, in active floodplains - Christchurch geology 2008",

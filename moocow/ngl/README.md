@@ -1,2 +1,0 @@
-# ngl
-Next-Generation Liquefaction
